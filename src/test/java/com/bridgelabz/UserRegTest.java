@@ -5,8 +5,14 @@ public class UserRegTest {
     static UserReg userReg = new UserReg();
 
     @Test
-     void whenGivenValidFirstShouldReturnTrue() {
+    void whenGivenValidFirstNameShouldReturnTrue() {
         boolean validName = userReg.validateFirstName("Rajiv");
-        Assertions.assertEquals(true,validName );
+        Assertions.assertEquals(true, validName);
+    }
+
+    @Test
+    void whenGivenValidLastNameShouldReturnTrue() {
+        boolean validName = userReg.validateFirstName("Jajodia");
+        Assertions.assertEquals(true, validName);
     }
 }
