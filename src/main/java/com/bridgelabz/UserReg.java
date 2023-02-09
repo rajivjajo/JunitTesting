@@ -8,9 +8,15 @@ public class UserReg {
     Matcher matcher;
     public static final String validName = "^[A-Z][a-zA-Z]{2,}";
 
-    public  boolean validateFirstName(String firstName) {
+    public boolean validateFirstName(String firstName) {
         Pattern pattern = Pattern.compile(validName);
         Matcher matcher = pattern.matcher(firstName);
+        return matcher.matches();
+    }
+
+    public boolean validateLastName(String lastName) {
+        Pattern pattern = Pattern.compile(validName);
+        Matcher matcher = pattern.matcher(lastName);
         return matcher.matches();
     }
 }
