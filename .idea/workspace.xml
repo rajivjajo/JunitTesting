@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="722e834b-1500-4ee7-a513-5e9329bfb4e3" name="Changes" comment="Junit Testing for valid email.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/UserReg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/UserReg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/UserRegTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/UserRegTest.java" afterDir="false" />
+    <list default="true" id="722e834b-1500-4ee7-a513-5e9329bfb4e3" name="Changes" comment="Junit Testing for valid Phone Number.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +170,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676020300161</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Junit Testing for valid Phone Number.">
+      <created>1676020868542</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676020868542</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Junit Testing for valid Phone Number.">
+      <created>1676020994136</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676020994136</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,7 +201,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Junit Testing" />
     <MESSAGE value="Junit Testing for valid email." />
-    <option name="LAST_COMMIT_MESSAGE" value="Junit Testing for valid email." />
+    <MESSAGE value="Junit Testing for valid Phone Number." />
+    <option name="LAST_COMMIT_MESSAGE" value="Junit Testing for valid Phone Number." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
