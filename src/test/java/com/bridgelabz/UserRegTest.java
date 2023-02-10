@@ -15,10 +15,16 @@ public class UserRegTest {
         boolean validName = userReg.validateLastName("Jajodia");
         Assertions.assertEquals(true, validName);
     }
+
     @Test
     void whenGivenValidEmailShouldReturnTrue() {
         boolean validateEmail = userReg.validateEmail("rajiv.jajodia82552@gmail.com");
         Assertions.assertEquals(true, validateEmail);
     }
 
+    @Test
+    void whenGivenValidPhoneNumberShouldReturnTrue() {
+        boolean validatePhoneNumber = userReg.validatePhoneNumber("+91 9878690911");
+        Assertions.assertEquals(true, validatePhoneNumber);
+    }
 }
