@@ -26,6 +26,13 @@ public class UserReg {
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
     }
+
+    public boolean validatePhoneNumber(String phoneNumber) {
+        String phoneNum = "^[+][0-9]{2}+[ ]*[1-9]{1}[0-9]{9}$";
+        Pattern pattern = Pattern.compile(phoneNum);
+        Matcher matcher = pattern.matcher(phoneNumber);
+        return matcher.matches();
+    }
 }
 
 
