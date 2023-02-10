@@ -28,4 +28,10 @@ public class UserRegTest {
         Assertions.assertEquals(true, validatePhoneNumber);
     }
 
+    @Test
+    void whenGivenValidPasswordShouldReturnTrue() {
+        boolean validatePassword = userReg.validatePassword("Rj&123456");
+        Assertions.assertEquals(true, validatePassword);
+
+    }
 }

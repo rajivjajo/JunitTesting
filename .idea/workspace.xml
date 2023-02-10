@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="722e834b-1500-4ee7-a513-5e9329bfb4e3" name="Changes" comment="Junit Testing for valid email.">
+    <list default="true" id="722e834b-1500-4ee7-a513-5e9329bfb4e3" name="Changes" comment="Junit Testing for valid Phone Number.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bridgelabz/UserReg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bridgelabz/UserReg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bridgelabz/UserRegTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bridgelabz/UserRegTest.java" afterDir="false" />
     </list>
@@ -50,7 +51,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.UserRegTest.whenGivenValidPhoneNumberShouldReturnTrue">
+  <component name="RunManager" selected="JUnit.UserRegTest.whenGivenValidPasswordShouldReturnTrue">
     <configuration name="UserRegTest.whenGivenValidEmailShouldReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JunitTesting" />
       <extension name="coverage">
@@ -99,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRegTest.whenGivenValidNameShouldReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRegTest.whenGivenValidPasswordShouldReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JunitTesting" />
       <extension name="coverage">
         <pattern>
@@ -109,7 +110,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bridgelabz" />
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.UserRegTest" />
-      <option name="METHOD_NAME" value="whenGivenValidNameShouldReturnTrue" />
+      <option name="METHOD_NAME" value="whenGivenValidPasswordShouldReturnTrue" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRegTest.whenGivenValidPasswordShouldReturnTrue" />
         <item itemvalue="JUnit.UserRegTest.whenGivenValidPhoneNumberShouldReturnTrue" />
         <item itemvalue="JUnit.UserRegTest.whenGivenValidEmailShouldReturnTrue" />
         <item itemvalue="JUnit.UserRegTest.whenGivenValidLastNameShouldReturnTrue" />
         <item itemvalue="JUnit.UserRegTest.whenGivenValidFirstShouldReturnTrue" />
-        <item itemvalue="JUnit.UserRegTest.whenGivenValidNameShouldReturnTrue" />
       </list>
     </recent_temporary>
   </component>

@@ -33,6 +33,13 @@ public class UserReg {
         Matcher matcher = pattern.matcher(phoneNumber);
         return matcher.matches();
     }
+    public boolean validatePassword(String passWord) {
+        String passWordSet = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*?&])[A-Za-z0-9@$!%*?&]{8,}$";
+        Pattern pattern = Pattern.compile(passWordSet);
+        Matcher matcher = pattern.matcher(passWord);
+
+            return matcher.matches();
+        }
 }
 
 
