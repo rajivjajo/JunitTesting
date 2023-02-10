@@ -19,5 +19,13 @@ public class UserReg {
         Matcher matcher = pattern.matcher(lastName);
         return matcher.matches();
     }
+
+    public boolean validateEmail(String email) {
+        String ValidEmail = "^[a-z0-9]+[_+-.][a-z0-9]*[^_+-.]@([a-z0-9])+([.][a-z]{2,})(.[a-z]{2,3})?$";
+        Pattern pattern = Pattern.compile(ValidEmail);
+        Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
+    }
 }
+
 

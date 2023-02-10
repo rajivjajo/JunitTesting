@@ -50,7 +50,23 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.UserRegTest.whenGivenValidLastNameShouldReturnTrue">
+  <component name="RunManager" selected="JUnit.UserRegTest.whenGivenValidEmailShouldReturnTrue">
+    <configuration name="UserRegTest.whenGivenValidEmailShouldReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JunitTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bridgelabz" />
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.UserRegTest" />
+      <option name="METHOD_NAME" value="whenGivenValidEmailShouldReturnTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserRegTest.whenGivenValidFirstShouldReturnTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JunitTesting" />
       <extension name="coverage">
@@ -101,6 +117,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRegTest.whenGivenValidEmailShouldReturnTrue" />
         <item itemvalue="JUnit.UserRegTest.whenGivenValidLastNameShouldReturnTrue" />
         <item itemvalue="JUnit.UserRegTest.whenGivenValidFirstShouldReturnTrue" />
         <item itemvalue="JUnit.UserRegTest.whenGivenValidNameShouldReturnTrue" />
