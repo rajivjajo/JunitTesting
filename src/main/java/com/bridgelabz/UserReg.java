@@ -21,14 +21,14 @@ public class UserReg {
     }
 
     public boolean validateEmail(String email) {
-        String ValidEmail = "^[a-z0-9]+[_+-.][a-z0-9]*[^_+-.]@([a-z0-9])+([.][a-z]{2,})(.[a-z]{2,3})?$";
+        String ValidEmail = "^[a-z0-9]+[_+-.]?[a-z0-9]*@([a-z0-9])+([.][a-z]{2,})(.[a-z]{2,3})?$";
         Pattern pattern = Pattern.compile(ValidEmail);
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
     }
 
     public boolean validatePhoneNumber(String phoneNumber) {
-        String phoneNum = "^[+][0-9]{2}+[ ]*[1-9]{1}[0-9]{9}$";
+        String phoneNum = "^[+]?[0-9]{2}+[ ]*[1-9]{1}[0-9]{9}$";
         Pattern pattern = Pattern.compile(phoneNum);
         Matcher matcher = pattern.matcher(phoneNumber);
         return matcher.matches();
@@ -40,6 +40,13 @@ public class UserReg {
 
             return matcher.matches();
         }
+
+    public boolean validateSampleEmail(String email) {
+        String validEmail = "^[a-z]{3,}[.+-]?[a-zA-z0-9]*[@][a-z0-9]*[.]?[a-z]*[.]?[a-z]*$";
+        Pattern pattern = Pattern.compile(validEmail);
+        Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
+    }
 }
 
 
