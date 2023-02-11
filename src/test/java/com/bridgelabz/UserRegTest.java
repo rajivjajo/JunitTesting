@@ -1,37 +1,62 @@
 package com.bridgelabz;
+
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+@RunWith(Parameterized.class)
 public class UserRegTest {
-    static UserReg userReg = new UserReg();
+    UserReg userReg;
+    private boolean expected;
+    private String email;
+
+    public UserRegTest(boolean expected, String email){
+        this.expected = expected;
+        this.email=email;
+    }
+    @Before
+    public void setup(){
+        userReg = new UserReg();
+    }
 
     @Test
-    void whenGivenValidFirstNameShouldReturnTrue() {
+    public void whenGivenValidFirstNameShouldReturnTrue(){
         boolean validName = userReg.validateFirstName("Rajiv");
         Assertions.assertEquals(true, validName);
     }
-
     @Test
-    void whenGivenValidLastNameShouldReturnTrue() {
-        boolean validName = userReg.validateLastName("Jajodia");
+    public void whenGivenValidLastNameShouldReturnTrue(){
+        boolean validName = userReg.validateLastName("Jajo");
         Assertions.assertEquals(true, validName);
     }
-
     @Test
-    void whenGivenValidEmailShouldReturnTrue() {
-        boolean validateEmail = userReg.validateEmail("rajiv.jajodia82552@gmail.com");
-        Assertions.assertEquals(true, validateEmail);
+    public void whenGivenValidEmailShouldReturnTrue(){
+        boolean validEmail = userReg.validateEmail("rajiv.jajodia825225@gmail.com");
+        Assertions.assertEquals(true, validEmail);
     }
-
     @Test
-    void whenGivenValidPhoneNumberShouldReturnTrue() {
-        boolean validatePhoneNumber = userReg.validatePhoneNumber("+91 9878690911");
-        Assertions.assertEquals(true, validatePhoneNumber);
+    public void whenGivenValidMobileNumberShouldReturnTrue(){
+        boolean validMobileNumber = userReg.validatePhoneNumber("919000006909");
+        Assertions.assertEquals(true, validMobileNumber);
     }
-
     @Test
-    void whenGivenValidPasswordShouldReturnTrue() {
-        boolean validatePassword = userReg.validatePassword("Rj&123456");
-        Assertions.assertEquals(true, validatePassword);
-
+    public void whenGivenValidPasswordShouldReturnTrue(){
+        boolean validPassword = userReg.validatePassword("K%j12345");
+        Assertions.assertEquals(true, validPassword);
+    }
+    @Parameterized.Parameters
+    public static Collection testData(){
+        Object[][] sampleEmails = new Object[][]{{true, "abc@yahoo.com"}, {true, "abc-100@yahoo.com"},{true,"abc.100@yahoo.com"}, {true, "abc111@abc.com"}, {true, "abc-100@abc.net"}, {true, "abc.100@abc.com.au"}, {true, "abc@1.com"}, {true, "abc@gmail.com.com"}, {true, "abc+100@gmail.com"}, {false, "abc"}, {false, ".abc@abc.com"}, {false, "abc()*@gmail.com"}, {false, "abc@gmail.com.aa.au"}};
+        return Arrays.asList(sampleEmails);
+    }
+    @Test
+    public void WhenGivenSampleEmailShouldReturnTrue(){
+        Assert.assertEquals(expected, userReg.validateSampleEmail(email));
     }
 }
